@@ -6,6 +6,7 @@ class Avrm < Formula
     sha256 "1df96cbfa8f0ffef99683ddf152393c96b6251a59a45805050d0edfbe64f73f3"
 
     depends_on 'avr-gcc'
+    depends_on 'avr-libc'
 
     def install
         system "make PREFIX=#{Formula["avr-libc"].prefix}/avr"
