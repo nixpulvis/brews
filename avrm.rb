@@ -8,7 +8,7 @@ class Avrm < Formula
     depends_on 'avr-gcc'
 
     def install
-        system "make PREFIX=#{Formula["avr-libc"].prefix}"
-        system "make install PREFIX=#{Formula["avr-libc"].prefix}"
+        system "make PREFIX=#{Formula["avr-libc"].prefix}/avr"
+        system "make install PREFIX=#{Formula["avr-libc"].prefix}/avr"
     end
 end
