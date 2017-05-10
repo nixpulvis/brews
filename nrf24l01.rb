@@ -5,7 +5,7 @@ class Nrf24l01 < Formula
     version "0.0.1"
     sha256 "08f9e0b0391adf12de17ccc7f7d5c75f3304736b41a3f64d4bcdb56a79ab0ff5"
 
-    depends_on 'avrm'
+    depends_on 'nixpulvis/formulas/avrm'
 
     def install
         system "make PREFIX=#{Formula["avr-libc"].prefix}/avr"

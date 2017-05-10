@@ -5,7 +5,7 @@ class Max7221 < Formula
     version "0.0.1"
     sha256 "fe1d61b86c1e5353f42ceab19aa2cf804809c9d7c4abf38f1c9d6784fd0f2021"
 
-    depends_on 'avrm'
+    depends_on 'nixpulvis/formulas/avrm'
 
     def install
         system "make PREFIX=#{Formula["avr-libc"].prefix}/avr"
